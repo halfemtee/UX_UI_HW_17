@@ -7,17 +7,14 @@ header {
 h1 {
   font-weight: bold; 
   margin-left: 50px;
-}
+  color: #000000;
+  }
 
-h3{
-  
-
-}
 
 h4 {
   padding-top: 20px;
+  }
 
-}
 
 p {
   padding-top: 10px;
@@ -91,12 +88,6 @@ p {
  
   }
 
-  img {
-    max-width: 800px;
-    max-height: 500px;
-    height: auto;
-    align: left;
-  }
 
   footer {
     font-family: 'Balsamiq Sans', cursive;
@@ -160,7 +151,7 @@ p {
   width:200px;
   height: 200px;
   background-color: pink;
-  border-radius:100px; 
+  border-radius:50px; 
   
 }
 
@@ -175,20 +166,6 @@ p {
   padding: 3rem; 
  
 }
-
-
-
-@media only screen and (max-width: 600px) { 
-  .flexbox {
-    display:block;   
-}
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-} 
 
 
 .my-skills {
@@ -207,7 +184,20 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-columns: 35%  65%;
   row-gap: 50px;
+  margin-top: 100px;
+}
+
+
+@media only screen and (max-width: 600px) { 
+  .flexbox {
+    display: block;   
+}
+
+  .grid-container {
+    grid-template-columns: 1fr;
+
+}
+
 }
